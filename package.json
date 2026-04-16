@@ -1,24 +1,19 @@
 {
-  "name": "ohc-cds",
+  "name": "Content Delivery System",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server.js"
-
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "test": "cross-env NODE_ENV=test vitest"
+  },
   "dependencies": {
-    "@supabase/supabase-js": "^2.103.0",
-    "cors": "^2.8.6",
-    "dotenv": "^17.4.1",
-    "expess": "^0.0.1-security"
+    "@supabase/supabase-js": "^2.39.0",
+    "cross-env": "^10.1.0",
+    "dotenv": "^17.4.2",
+    "express": "^4.19.2"
   },
   "devDependencies": {
-    "nodemon": "^3.1.14"
+    "supertest": "^6.3.4",
+    "vitest": "^1.6.0"
   }
 }
